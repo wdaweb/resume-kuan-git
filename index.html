@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resumes</title>
+    <!-- <link rel="stylesheet" href="./css/css.css"> -->
+    <script src="./css/jquery-1.9.1.min.js"></script>
+    <script src="./css/js.js"></script>
+    <style>
+        *{
+            color: rgb(138, 78, 78);
+        }
+        #layout{
+            width:1200px;
+            height:900px;
+            /* float:left; */
+            border:#83cDD4 3px ;
+        }
+        #menu{
+            width:18%;
+            height:900px;
+            float:left;
+            /* background-size:cover; */
+            background-color:#008797 ;
+            /* background-repeat:no-repeat; */
+        }
+        .menu{
+            font-size:24px;
+            color: #FFFFFF;
+        }
+        
+        #header{
+            float:left ;
+            width:80% ;
+            height:30% ;
+            position:relative ;
+            background-color:#83cDD4 ;
+            margin:0px;
+        }
+        #view{
+            float:left ;
+            width:80% ;
+            height:70% ;
+            position:relative ;
+            background-color:#0ab;
+        }
+        li{
+            font: outline;
+            font-size: 30px;
+            color: #edb;
+        }
+        #name{
+            font-size:120px;margin:0
+        }
+        .profile{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+
+        <div id="menu">
+            <div class='menu'>簡介</div>
+            <div class='menu'>求職目標</div>
+            <div class='menu'>技能專長</div>
+            <div class='menu'>學歷</div>
+            <div class='menu'>工作經歷</div>
+        </div>
+    
+        <div id="header">
+            <p id="name">Adan</p>
+            <p class="profile">
+                居住地:台灣 新北市 <br>
+                電話:0960-068-543 <br>
+                e-mail: adan@gmail.com <br>
+            </p>
+        </div>
+        <div id="view">
+            <li>自發性：積極面對事物</li>
+            <li>持續性：有責任感</li>
+            <li>協調性：能融入團體生活</li>
+            <li>社交性：善於與人溝通</li>
+            <li>體貼度：待人和善</li>
+            <li>思考性：具邏輯思考力</li>
+            <li>創造性：有獨立思考能力</li>
+        </div>
+    </div>
+
+    <script>
+        
+        $('.menu').eq(0).on('click',function(){
+            console.log($('.menu').eq(0).text());
+        })
+        $('.menu').eq(1).on('click',function(){
+            console.log($('.menu').eq(1).text());
+        })
+        $('.menu').eq(2).on('click',function(){
+            console.log($('.menu').eq(2).text());
+        })
+        $('.menu').eq(3).on('click',function(){
+            console.log($('.menu').eq(3).text());
+        })
+        $('.menu').eq(4).on('click',function(){
+            console.log($('.menu').eq(4).text());
+        })
+    </script>
+</body>
+</html>
+

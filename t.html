@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>t</title>
+    <script src="./css/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+    <input type="button" value="點我" id="btn1">
+    <input type="button" value="點我2" id="btn2" onclick="clickbtn('hi')">
+
+    <table>
+        <tr>
+            <td>AZ-50879613</td>
+            <td>512元</td>
+            <td><input type="button" value="按我" onclick="showdetail(this)"></td>
+        </tr>
+        <tr>
+            <td>AZ-48144474</td>
+            <td>620元</td>
+            <td><input type="button" value="按我" onclick="showdetail(this)"></td>
+        </tr>
+        <tr>
+            <td>FH-55123247</td>
+            <td>823元</td>
+            <td><input type="button" value="按我" onclick="showdetail(this)"></td>
+        </tr>
+        <tr>
+            <td>CA-46240796</td>
+            <td>137元</td>
+            <td><input type="button" value="按我" onclick="showdetail(this)"></td>
+        </tr>
+    </table>
+
+    <p class="myp">100000</p>
+    <p class="myp">200000</p>
+    <p class="myp">300000</p>
+
+    <a href="https://google.com" onclick="block(event)">Google</a>
+
+    
+            
+<script> 
+      let bt=document.getElementsByClassName('myp') ;
+      for (let i = 0; i < bt.length; i++) {
+          bt[i].innerText*=4;
+        //   bt[1].innerText=555 ;
+        //   console.log(bt[1].innerText);
+      }
+</script> 
+        
+</body>
+</html>
